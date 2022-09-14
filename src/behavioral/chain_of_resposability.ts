@@ -62,3 +62,15 @@ class Paypal extends Account {
 }
 
 
+
+//________реализация
+
+const master = new Master(100);
+const payPal = new Paypal(300);
+const qiwi = new Qiwi(500);
+
+master.setNext(payPal)
+payPal.setNext(qiwi)
+master.pay(438);
+
+

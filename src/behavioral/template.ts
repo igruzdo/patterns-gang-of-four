@@ -94,6 +94,7 @@ class ConcreteClass2 extends AbstractClass {
  * код не должен знать конкретный класс объекта, с которым работает, при
  * условии, что он работает с объектами через интерфейс их базового класса.
  */
+//@ts-ignore
 function clientCode(abstractClass: AbstractClass) {
     // ...
     abstractClass.templateMethod();

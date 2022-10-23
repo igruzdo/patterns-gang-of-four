@@ -45,6 +45,7 @@ class Adapter extends Target {
 /**
  * Клиентский код поддерживает все классы, использующие целевой интерфейс.
  */
+//@ts-ignore
 function clientCode(target: Target) {
     console.log(target.request());
 }

@@ -20,7 +20,7 @@ class CarD {
         return this.model
     }
 }
-
+//@ts-ignore
 class Tesla extends CarD {
 
     constructor() {
@@ -67,5 +67,5 @@ class Parctrinic {
 }
 
 let tesla = new Tesla();
-
+//@ts-ignore
 let teslaWithAutopilot = new Autopilot(tesla)
